@@ -1,0 +1,49 @@
+.navbar-brand {
+    height: auto;
+    padding: 10px 0;
+}
+.navbar-brand img {
+    display: block;
+    height: 50px;
+    padding: 0 15px;
+}
+.nav>li>a {
+    height: 70px;
+    padding: 0 15px;
+    line-height: 70px;
+}
+.nav>li:last-child a {
+    padding-right: 0;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+.navbar-form,
+.navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.navbar .form-control {
+    border-right: none;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-color: #666;
+    background-color: transparent;
+}
+.navbar .form-control:focus {
+    color: #fff;
+}
+.navbar .btn-default {
+    border-left: none;
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
+     border-color: #666;
+     background-color: transparent;
+     color: #9d9d9d;
+ }
+a:focus,
+.btn:focus {
+    outline: none;
+}
