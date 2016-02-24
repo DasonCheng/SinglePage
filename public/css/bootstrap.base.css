@@ -1,3 +1,11 @@
+body {
+    padding-top: 71px;
+    height: 2000px;;
+}
+.navbar-inverse {
+    border-color: transparent;
+    background-color: #111;
+}
 .navbar-brand {
     height: auto;
     padding: 10px 0;
@@ -46,4 +54,18 @@
 a:focus,
 .btn:focus {
     outline: none;
+}
+#slidershow .carousel-inner a {
+    display: block;
+}
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive, .thumbnail a>img,
+.thumbnail>img {
+    width: 100%;
+}
+.goods-list img {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
 }
