@@ -35,7 +35,7 @@ router.get('/about', function(req, res) {
 });
 router.get('/fullpage', function(req, res) {
     res.render('fullpage',{
-        title:'活动'
+        title:'活动',
     });
 });
 router.post('/fullpage', function(req, res) {
