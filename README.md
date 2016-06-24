@@ -1,2 +1,1 @@
-# SinglePage
-* fullpage
+# TITLE
