@@ -13,5 +13,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "fullpage.js": "fullpage#^2.8.1"
+  }
 }
