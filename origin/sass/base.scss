@@ -3,12 +3,12 @@
   top: 0;
   left: 0;
   z-index: 1;
+  display: none;
   width: 100%;
-  ul {
-    li {
-      display: inline-block;
-    }
-  }
+  text-align: center;
+  font-size: 20px;
+  line-height: 3em;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 #fp-nav ul li:first-child, #fp-nav ul li:last-child {
