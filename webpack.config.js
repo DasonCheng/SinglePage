@@ -30,10 +30,10 @@ module.exports = {
     },
     devtool: "source-map",
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
+        /*new webpack.optimize.CommonsChunkPlugin({
             name: "common",
             minChunks: 2
-        }),
+        }),*/
         new ExtractTextPlugin("[name].css"),
         new webpack.optimize.UglifyJsPlugin({
             compress: {

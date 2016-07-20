@@ -1,0 +1,18 @@
+#fp-nav ul li:first-child, #fp-nav ul li:last-child {
+  display: none;
+}
+
+.section.fp-auto-height {
+  &.header {
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #fff;
+  }
+  &.footer {
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    background-color: #fff;
+  }
+}

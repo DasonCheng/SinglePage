@@ -1,9 +1,32 @@
-DOCTYPE html
-html lang="en"
+doctype html
+html(lang="en")
     head
         include includes/meta.pug
         title FullPage
         meta(name="description",content="singlepage power by fullpage")
         meta(name="keywords",content="singlepage,fullpage")
+        link(rel="stylesheet" href="public/build/entry.css")
     body
-        hello hello world
+        #full
+            .section.fp-auto-height.header
+                h2 header
+            .section
+                .test-content
+                    h3.
+                        Answering Arrogance with Pride,<br>And Prejudice with Persistence
+                    p.
+                        No matter whether you’re running games, heavyweight apps, or complex video editing,<br> Smartisan T2’s performance always remains perfectly fluid.
+                .skip-animate
+            .section 2
+            .section
+                .slide  3.1
+                .slide  3.2
+                .slide  3.3
+                .slide  3.4
+            .section 4
+            .section 5
+            .section.fp-auto-height.footer
+                h2 footer
+        script(src="public/js/jquery.min.js")
+        script(src="public/js/jquery.fullpage.js")
+        script(src="public/build/entry.js")
