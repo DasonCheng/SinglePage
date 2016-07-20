@@ -1,11 +1,12 @@
 $(document).ready(function () {
     $('#full').fullpage({
+        menu: '#menu',
         anchors: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6', 'Page7'],
         navigation: true,
         navigationTooltips: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6', 'Page7'],
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-        //Scrolling 
+        //Scrolling
         css3: true,
         scrollingSpeed: 1000,
         autoScrolling: true,
@@ -28,5 +29,23 @@ $(document).ready(function () {
         afterLoad: function (anchorLink, index) {
             console.log("load" + '-' + anchorLink + '-' + index);
         },
+        afterRender: function () {
+            console.log("afterRender");
+            autoScrolling();
+        },
+        afterResize: function () {
+            autoScrolling();
+        }
     });
+    function autoScrolling() {
+        var $hh = $(window).height();
+        if ($hh < 500) {
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    };
+    if ($("#fp-nav ul li a.active").parent().index() === 0 || $("#fp-nav ul li a.active").parent().index() === 6) {
+        $('#fp-nav').hide();
+    }
 });
